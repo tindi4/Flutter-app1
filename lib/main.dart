@@ -68,8 +68,37 @@ class HomePageState extends State<HomePage> {
         child : ListView(
           children : [
             DrawerHeader(
+              decoration : BoxDecoration(
+                color : Colors.blue
+              ),
               child : Text("Menu")
-            )
+            ),
+            ListTile(
+              leading : Icon(Icons.settings),
+              title : Text("Paramètres"),
+              onTap : (){}
+            ),
+            ListTile(
+              leading : Icon(Icons.account_box),
+              title : Text("Profil"),
+              onTap : (){}
+            ),
+            ListTile(
+              leading : Icon(Icons.help),
+              title : Text("Helps"),
+              onTap : (){}
+            ),
+            ListTile(
+              leading : Icon(Icons.mail),
+              title : Text("Contact"),
+              onTap : (){}
+            ),
+            ListTile(
+              leading : Icon(Icons.close),
+              title : Text("Quitter"),
+              onTap : (){}
+            ),
+          
           ],
         ),
       ),
