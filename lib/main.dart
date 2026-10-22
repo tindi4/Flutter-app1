@@ -76,6 +76,7 @@ class HomePageState extends State<HomePage> {
             ListTile(
               leading : Icon(Icons.settings),
               title : Text("Paramètres"),
+              trailing : Icon(Icons.chevron_right),
               onTap : (){}
             ),
             ListTile(
@@ -91,7 +92,14 @@ class HomePageState extends State<HomePage> {
             ListTile(
               leading : Icon(Icons.mail),
               title : Text("Contact"),
-              onTap : (){}
+              onTap : (){
+                destinations : [
+                  NavigationDestination(
+                    icon : Icon(Icons.message),
+                    label : "Discussions",
+                  )
+                ];
+              }
             ),
             ListTile(
               leading : Icon(Icons.close),
