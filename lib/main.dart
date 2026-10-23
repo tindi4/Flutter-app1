@@ -92,19 +92,21 @@ class HomePageState extends State<HomePage> {
             ListTile(
               leading : Icon(Icons.mail),
               title : Text("Contact"),
+              trailing : Icon(Icons.chevron_right),
               onTap : (){
-                destinations : [
-                  NavigationDestination(
-                    icon : Icon(Icons.message),
-                    label : "Discussions",
-                  )
-                ];
+               Navigator.push( context, MaterialPageRoute( builder : (context){
+                return DiscussionsPage();
+               }));
               }
             ),
             ListTile(
               leading : Icon(Icons.close),
               title : Text("Quitter"),
-              onTap : (){}
+              onTap : (){
+                Navigator.push( context, MaterialPageRoute( builder : (context){
+                return AppelPage();
+               }));
+              }
             ),
           
           ],

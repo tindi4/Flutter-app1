@@ -4,8 +4,15 @@ class DiscussionsPage extends StatelessWidget {
   @override 
 
   Widget build( BuildContext context) {
-    return Center(
-      child : Text("Discussions page : lire en anglais")
+    return Scaffold (
+      body : Center(
+        child : ElevatedButton(
+          onPressed : (){
+            Navigator.pop(context);
+          },
+          child : Text(" Bienvenu sur la page de discussions : Cliquez pour retourner au Menu")
+        )
+      )
     );
   }
 }
