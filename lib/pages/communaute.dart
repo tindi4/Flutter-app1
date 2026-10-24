@@ -4,8 +4,16 @@ class CommunautePage extends StatelessWidget {
   @override 
 
   Widget build( BuildContext context) {
-    return Center(
-      child : Text("Communauté page : lire en anglais")
+    return Scaffold(
+      appBar : AppBar(
+        title : const Text("Page Communauté")
+      ),
+      body : ListView(
+        children : [
+          TextField ()
+        ]
+      ),
     );
+    
   }
 }

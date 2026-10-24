@@ -12,8 +12,12 @@ void main(){
       scaffoldBackgroundColor : Colors.green,
 
     ),
-    home: HomePage(),
     debugShowCheckedModeBanner : false,
+    initialRoute : '/',
+    routes : {
+      '/' : (context) => HomePage(),
+    '/settings' : (context) => AppelPage(),
+    }
   ));
 }
 
