@@ -9,8 +9,19 @@ class CommunautePage extends StatelessWidget {
         title : const Text("Page Communauté")
       ),
       body : ListView(
+        padding : EdgeInsets.all(10),
         children : [
-          TextField ()
+          TextField (
+            decoration : InputDecoration(
+              hintText : "Entrez votre E-mail",
+              labelText: "E-mail",
+              prefixIcon : Icon(Icons.email),
+              border : OutlineInputBorder(),
+              filled : true,
+              fillColor : Colors.white,
+
+            ),
+          )
         ]
       ),
     );
